@@ -1,0 +1,514 @@
+/* ===== GLOBAL ===== */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* ===== NAVBAR ===== */
+
+nav {
+    background-color: #222831;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav>.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* MENU DEFAULT DESKTOP */
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+
+/* HAMBURGER BUTTON DEFAULT */
+
+.humberger-menu {
+    display: none;
+    /* tampil hanya di mobile */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.humberger-menu .icon-close {
+    display: none;
+}
+
+
+/* ===== HEADER / HERO ===== */
+
+header {
+    background: url("../Logo/altumcode-PNbDkQ2DDgM-unsplash.jpg") no-repeat center center;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 100px;
+    background-size: cover;
+    position: relative;
+    font-family: "Red Hat Display", sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #000;
+}
+
+.header-opacity {
+    background-color: #222831;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron .text-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px 60px;
+    border-radius: 12px;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.header-jumbotron .text-box h4 {
+    color: #ffce10;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.header-jumbotron .text-box h5 {
+    color: #fff;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-jumbotron .text-box p {
+    margin-bottom: 30px;
+    color: #ffce10;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.header-jumbotron .text-box a.button {
+    display: inline-block;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 15px 25px;
+    background-color: #ffce10;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+/* ===== BUTTONS ===== */
+
+.button {
+    background-color: #ffce10;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.button-xl {
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+
+/* ===== STATISTIC ===== */
+
+#statistic {
+    background-color: #393e46;
+    color: #fff;
+}
+
+#statistic .wrapper {
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#statistic .wrapper>div {
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+#statistic .wrapper>div>p {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#statistic .wrapper>div>small {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* ===== PREMIUM COURSE ===== */
+
+#premium-course {
+    background-color: #61656d;
+    color: #fff;
+    padding: 20px;
+}
+
+#premium-course h4 {
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+#premium-course h4 span {
+    color: #ffce10;
+}
+
+#premium-course p {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 5px;
+}
+
+
+/* ===== GRID ===== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 850px;
+    margin: auto;
+    padding: 30px 15px;
+}
+
+.grid .item {
+    position: relative;
+    background-color: #2e3122;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.grid .item img {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: auto;
+}
+
+.grid .item p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 8px 0;
+    color: #f1f1f1;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+.grid .item .item-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+}
+
+.grid .item small {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #b9df0f;
+}
+
+.grid .item a.button {
+    font-size: 0.9rem;
+    color: #080707;
+    background-color: #ffce10;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* ===== TENTANG SAYA ===== */
+
+#tentang-saya {
+    padding: 20px;
+    background-color: #eceedf;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+#tentang-saya h4 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-content .foto img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.2);
+}
+
+.about-content .desc {
+    flex: 2;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(99, 98, 98, 0.1);
+    text-align: left;
+}
+
+.about-content .desc p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* ===== FREE COURSE ===== */
+
+
+/* ===== FREE COURSE GRID ===== */
+
+#free-course .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* semua item di tengah */
+    gap: 20px;
+    padding: 0;
+}
+
+#free-course .item {
+    background-color: #083c66;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* pusatkan semua konten horizontal */
+    text-align: center;
+    min-height: 250px;
+    width: 240px;
+    /* ukuran tetap agar rapi */
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+#free-course .item img {
+    width: 180px;
+    /* ukuran gambar */
+    height: 120px;
+    padding: 15px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    display: block;
+    /* pastikan center */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#free-course .item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+#free-course .item-footer a.button {
+    background-color: #ffce10;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Judul dan subjudul Free Course */
+
+#free-course h4 {
+    text-align: center;
+    /* teks di tengah */
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+#free-course h4 span {
+    color: #ffce10;
+}
+
+#free-course p {
+    text-align: center;
+    /* teks di tengah */
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: hwb(0 30% 69%);
+    color: #fff;
+    text-align: center;
+}
+
+footer .wrapper {
+    padding: 30px 0;
+}
+
+
+/* ===== MEDIA QUERIES ===== */
+
+
+/* Hamburger muncul ≤ 700px */
+
+@media (max-width: 700px) {
+    .humberger-menu {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        /* vertikal di tengah navbar */
+        right: 15px;
+        /* jarak dari kanan, bisa sesuaikan */
+        transform: translateY(-50%);
+        z-index: 200;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        /* tepat di bawah navbar */
+        left: 0;
+        width: 100%;
+        background-color: #222831;
+        padding: 15px 0;
+        border-radius: 0 0 20px 20px;
+    }
+    .menu.tampil {
+        display: flex;
+    }
+    .menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    .menu ul li a {
+        padding: 12px 20px;
+        border-bottom: 1px solid #444;
+        display: block;
+    }
+    .humberger-menu.active .icon-bars {
+        display: none;
+    }
+    .humberger-menu.active .icon-close {
+        display: inline;
+    }
+    /* About & header responsive */
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-content .desc {
+        text-align: center;
+    }
+    .header-jumbotron .text-box {
+        padding: 20px 25px;
+    }
+    .header-jumbotron .text-box h5 {
+        font-size: 1.8rem;
+    }
+    .header-jumbotron .text-box h4 {
+        font-size: 1.5rem;
+    }
+}
